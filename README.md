@@ -24,10 +24,10 @@ Given a vessel, creates a new equipment for that vessel. The user can create as 
 ```http
 POST /register-equipment
 body: {
-    vessel-id: <vessel-id>,
-    equipment-id: <equipment-id>,
-    name: <equipment-name>,
-    location: <equipment-location>,
+    vessel-id: <vessel-id>
+    equipment-id: <equipment-id>
+    name: <equipment-name>
+    location: <equipment-location>
 }
 ```
 
@@ -42,7 +42,7 @@ Set the equipment status between `0 (ACTIVE)` and `1 (INACTIVE)`. There is some 
 PATCH /update-equipment
 body: {
     "equipment-id": <equipment-id>,
-    "status": <1, 2>
+    "status": <1 | 2>
 }
 ```
 
