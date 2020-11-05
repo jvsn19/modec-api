@@ -41,7 +41,7 @@ Set the equipment status between `0 (ACTIVE)` and `1 (INACTIVE)`. There is some 
 ```http
 PATCH /update-equipment
 body: {
-    "equipment-id": <equipment-id>,
+    "equipment-id": <equipment-id>
     "status": <1 | 2>
 }
 ```
